@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message RequestResponse {
+  repeated int32 data = 1;
+}
+
+
+service VectorStream {
+  rpc add_one(stream RequestResponse) returns (stream RequestResponse) {};
+}

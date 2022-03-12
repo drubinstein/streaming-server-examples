@@ -1,0 +1,4 @@
+grpcio-tools
+mypy
+black
+mypy-protobuf
